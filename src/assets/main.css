@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+html {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+}
+
+*::-webkit-scrollbar {
+    width: 11px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 50px 35px 50px;
+}
+
+h2 {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+h4 {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 0 0 1em 0;
+}
+
+span {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: rgba(108, 117, 125, 1);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.content-container {
+    padding: 0 50px 0 50px;
+}
+
+.important-text {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 12px 32px;
+    background: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.btn-blue-outline {
+    color: rgba(13, 110, 253, 1);
+    border: 1px solid rgba(13, 110, 253, 1);
+}
+
+.btn-blue-outline:hover {
+    background-color: rgba(13, 110, 253, 1);
+    color: white;
+}
+
+.btn-red-outline {
+    color: rgba(220, 53, 69, 1);
+    border: 1px solid rgba(220, 53, 69, 1);
+}
+
+.btn-red-outline:hover:enabled {
+    background-color: rgba(220, 53, 69, 1);
+    color: white;
+}
+
+.btn-pagination {
+    cursor: pointer;
+    padding: 8px 12px;
+    background: none;
+    font-size: 14px;
+    border: none;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
